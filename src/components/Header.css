@@ -1,0 +1,141 @@
+.site-header {
+  width: 100%;
+  background: #242f49; /* Dark header */
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #FFA586; /* Highlight color */
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color:#b37d7d;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+a:-webkit-any-link {
+    color: #fff;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+.nav-links a:hover {
+  color: #FFA586;
+}
+.active-link {
+  color: #FFA586 !important;   /* Highlight selected link */
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: rgba(255, 165, 134, 0.15);
+  transition: all 0.3s ease;
+}
+
+
+.cart-icon {
+  font-size: 22px;
+  color: #A1162E;
+  margin-left: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.2);
+  color: #B5314B;
+}
+
+
+.login-animated {
+ display: inline-block;
+  color: #A1162E;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+header-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.header-profile:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.header-profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.header-profile-name {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+
+
+
+.login-animated:hover {
+  animation: jelly 0.6s;
+  color: #B5314B;
+}
+
+.logout-btn {
+  background-color: #A1162E;
+  color: #fff;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 6px;
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #B5314B;
+  transform: scale(1.08);
+}
+
+
+@keyframes jelly {
+  0% { transform: scale(1,1); }
+  25% { transform: scale(1.1,0.9); }
+  50% { transform: scale(0.9,1.1); }
+  75% { transform: scale(1.05,0.95); }
+  100% { transform: scale(1,1); }
+}
+.active-link {
+  color: #b37d7d;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}

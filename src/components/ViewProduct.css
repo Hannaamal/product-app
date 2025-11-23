@@ -1,0 +1,166 @@
+
+.product-details-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  padding: 8px 12px;
+  background-color: #aaa;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background-color: #888;
+}
+
+.product-details-card {
+ display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+/* Image section container */
+.image-section {
+  width: 350px;        /* fixed image area */
+  height: 350px;
+  overflow: hidden;    /* prevent stretching */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* Main image */
+.main-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;  /* keeps image small & neat */
+  border-radius: 10px;
+}
+
+/* Gallery thumbnail */
+.gallery img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  border: 2px solid #ddd;
+}
+
+.gallery img:hover {
+  border-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-section {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.gallery img.active,
+.gallery img:hover {
+  border-color: #2575fc;
+}
+
+.info-section {
+  flex: 1 1 300px;
+}
+
+.info-section h1 {
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.edit-btn {
+  padding: 20px 40px;
+  background-color: #2575fc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn:hover {
+  background-color: #1a5edc;
+}
+
+
+@media screen and (max-width: 768px) {
+  .product-details-card {
+    flex-direction: column;
+  }
+
+  .image-section, .info-section {
+    max-width: 100%;
+  }
+}

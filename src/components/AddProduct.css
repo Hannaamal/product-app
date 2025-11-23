@@ -1,0 +1,162 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f8fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page layout */
+.add-product-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* Main container */
+.add-product-container {
+  width: 100%;
+  max-width: 750px;
+  background: rgba(126, 67, 48, 0.15);
+  border-radius: 25px;
+  padding: 40px 35px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.6s ease;
+  backdrop-filter: blur(6px);
+}
+
+.add-product-container h1 {
+  text-align: center;
+  color: #d03400;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* Inputs */
+.add-product-container input,
+.add-product-container textarea
+{
+  width: 94%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  border: 2px solid #8d371b;
+  background: #fff;
+  color: #242f49;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+.dropdown-select {
+  width: 98%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  border: 2px solid #8d371b;
+  background: #fff;
+  color: #242f49;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Focus glow like home search bar */
+.add-product-container input:focus,
+.add-product-container textarea:focus,
+.dropdown-select:focus {
+  border-color: #d03400;
+  box-shadow: 0 0 10px rgba(208, 52, 0, 0.4);
+  transform: scale(1.02);
+}
+
+/* Dropdown styling */
+.dropdown-select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #d03400 50%),
+    linear-gradient(135deg, #d03400 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(1.1em),
+    calc(100% - 12px) calc(1.1em);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+/* Upload section */
+.image-upload {
+  margin-bottom: 20px;
+}
+
+.upload-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8d371b;
+  margin-bottom: 8px;
+}
+
+.preview-image {
+  max-width: 100%;
+  height: 180px;
+  border-radius: 15px;
+  margin-top: 10px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(126, 67, 48, 0.4);
+}
+
+/* Submit button */
+.add-product-container button[type="submit"] {
+  width: 98%;
+  padding: 14px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #a1162e, #b5314b);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(181, 49, 75, 0.4);
+}
+
+.add-product-container button[type="submit"]:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 15px 35px rgba(181, 49, 75, 0.6);
+}
+
+/* Back button */
+.back-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  background: rgba(28, 32, 64, 0.15);
+  color: #242f49;
+  font-size: 15px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: rgba(28, 32, 64, 0.25);
+  transform: scale(1.03);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .add-product-container {
+    padding: 25px 20px;
+    border-radius: 18px;
+  }
+}

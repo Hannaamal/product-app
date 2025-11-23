@@ -1,0 +1,117 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f8fa;
+  color: #242f49;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper */
+.login-page {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Login container matching your product cards + hero style */
+.login-container {
+  width: 100%;
+  max-width: 620px;
+  padding: 40px 35px;
+  background: rgba(126, 67, 48, 0.2);
+  border-radius: 22px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.6s ease;
+  backdrop-filter: blur(4px);
+}
+
+/* Title */
+.login-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #d03400;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+}
+
+/* Input fields (dark theme like your search input) */
+.login-container input {
+  width: 93%;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  border: 2px solid #384358;
+  background: #101528;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.login-container input:focus {
+  border-color: #FFA586;
+  box-shadow: 0 0 15px rgba(255, 165, 134, 0.3);
+  animation: jelly 0.6s;
+}
+
+/* Button styled same as your .add-btn & category-card */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  background: linear-gradient(135deg, #B5314B, #A1162E);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  background: linear-gradient(135deg, #A1162E, #B5314B);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+/* Footer link */
+.login-footer {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.login-footer a {
+  color: #B5314B;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Jelly animation (same as your search input) */
+@keyframes jelly {
+  0% { transform: scale(1,1); }
+  25% { transform: scale(1.1,0.9); }
+  50% { transform: scale(0.9,1.1); }
+  75% { transform: scale(1.05,0.95); }
+  100% { transform: scale(1,1); }
+}

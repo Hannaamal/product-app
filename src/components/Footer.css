@@ -1,0 +1,103 @@
+.footer {
+  background-color: #101528;
+  color: #f7f8fa;
+  padding: 20px 0 20px;
+  text-align: left;
+  position: relative;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  color: #FFA586;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-section p,
+.footer-section ul {
+  color: #dce1eb;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #dce1eb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #FFA586;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #384358;
+  font-size: 13px;
+  color: #a8b2c3;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+.footer-section .email-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #0056b3;
+}
+ .footer-section .phone-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+  color: #0056b3;
+}
+.footer-section .map-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.map-link:hover {
+  color: #0056b3;
+}
+
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+  }
+}
