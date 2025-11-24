@@ -17,11 +17,15 @@ const Profile = () => {
     const formData = new FormData();
     formData.append("image", imageFile);
 
-    await api.put("/api/user/profile/image", formData, {
+    const res = await api.put("/api/user/profile/image", formData, {
       headers: { "Content-Type": "multipart/form-data" },
     });
 
-    window.location.reload();
+     localStorage.setItem("user", JSON.stringify(res.data.data)); // 🆕 Save updated user
+
+      setUser(res.data.data); // update state
+
+  alert("Profile updated successfully!");
   };
 
   return (
