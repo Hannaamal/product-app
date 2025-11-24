@@ -65,7 +65,7 @@ const Cart = () => {
             {cartItems.map((item) => (
               <div key={item._id} className="cart-item-card">
                 <img
-                  src={item.product_id?.image}
+                  src={`${process.env.REACT_APP_BACKEND_URL}/${item.product_id?.image}`}
                   alt={item.product_id?.product_name}
                   className="cart-item-img"
                 />

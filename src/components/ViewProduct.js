@@ -7,7 +7,7 @@ import { useAuth } from "../context/AuthContext";
 const ViewProduct = ({ products, setProducts }) => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
-  const [selectedImage, setSelectedImage] = useState("");
+  const [selectedImage] = useState("");
   const navigate = useNavigate();
   const { role, token } = useAuth();
 
@@ -61,16 +61,6 @@ const ViewProduct = ({ products, setProducts }) => {
             }
             alt={product.product_name}
           />
-
-          {/* <div className="gallery">
-            {product.image && (
-              <img
-                src={`${process.env.REACT_APP_BACKEND_URL}/${product.image}`}
-                onClick={() => setSelectedImage(product.image)}
-                alt="thumbnail"
-              />
-            )}
-          </div> */}
         </div>
 
         <div className="info-section">
